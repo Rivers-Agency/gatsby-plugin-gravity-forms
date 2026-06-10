@@ -147,7 +147,7 @@ export const PhoneField = graphql`
     isRequired
     label
     labelPlacement
-    phoneFormat
+    phoneFormatType
     placeholder
     shouldAllowDuplicates
     size
