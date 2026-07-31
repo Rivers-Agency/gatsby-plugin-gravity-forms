@@ -201,29 +201,3 @@ export const NumberField = graphql`
     value
   }
 `;
-
-export const PhoneField = graphql`
-  fragment PhoneField on WpPhoneField {
-    adminLabel
-    autocompleteAttribute
-    canPrepopulate
-    conditionalLogic {
-      ...ConditionalLogic
-    }
-    cssClass
-    defaultValue
-    description
-    descriptionPlacement
-    errorMessage
-    hasAutocomplete
-    inputName
-    isRequired
-    label
-    labelPlacement
-    phoneFormatType
-    placeholder
-    shouldAllowDuplicates
-    size
-    value
-  }
-`;
