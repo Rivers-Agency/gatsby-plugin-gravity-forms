@@ -32,14 +32,14 @@ const MaskedInput = forwardRef((props, inputRef) => {
 const Phone = ({ fieldData, name, id, readonly, ...wrapProps }) => {
   const {
     cssClass,
-    phoneFormat,
+    phoneFormatType,
     isRequired,
     maxLength,
     placeholder,
     size,
   } = fieldData;
 
-  const hasPhoneFormat = phoneFormat === 'STANDARD';
+  const hasPhoneFormat = phoneFormatType === 'STANDARD';
 
   const {
     register,
@@ -115,7 +115,7 @@ export default withConditionalLogic(Phone);
 Phone.propTypes = {
   fieldData: PropTypes.shape({
     cssClass: PropTypes.string,
-    phoneFormat: PropTypes.string,
+    phoneFormatType: PropTypes.string,
     maxLength: PropTypes.number,
     placeholder: PropTypes.string,
     isRequired: PropTypes.bool,
@@ -147,7 +147,7 @@ export const PhoneField = graphql`
     isRequired
     label
     labelPlacement
-    phoneFormat
+    phoneFormatType
     placeholder
     shouldAllowDuplicates
     size
