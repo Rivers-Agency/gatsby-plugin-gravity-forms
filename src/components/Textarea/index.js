@@ -43,7 +43,6 @@ const Textarea = ({ fieldData, name, wrapClassName, wrapId, id, readonly }) => {
           "gravityform__field__input",
           `gravityform__field__input__${type}`,
           cssClass,
-          valueToLowerCase(size),
           "textarea"
         )}
         id={id}
@@ -84,7 +83,6 @@ Textarea.propTypes = {
     placeholder: PropTypes.string,
     isRequired: PropTypes.bool,
     type: PropTypes.string,
-    size: PropTypes.string,
   }),
   name: PropTypes.string,
   wrapClassName: PropTypes.string,
@@ -112,7 +110,6 @@ export const TextAreaField = graphql`
     maxLength
     shouldAllowDuplicates
     placeholder
-    size
     hasRichTextEditor
     value
   }

@@ -1,12 +1,12 @@
 {
   "name": "gatsby-plugin-gravity-forms",
-  "version": "3.1.0-p2.4.1",
-  "description": "A component to take GraphQl Gravity Forms query data and return a usable form.",
+  "version": "4.0.0",
+  "description": "A component to take GraphQl Gravity Forms query data and return a usable form. Fork of https://github.com/robmarshall/gatsby-plugin-gravity-forms",
   "main": "src/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robmarshall/gatsby-plugin-gravity-forms.git"
+    "url": "git+https://github.com/Rivers-Agency/gatsby-plugin-gravity-forms.git"
   },
   "keywords": [
     "gravity",
@@ -16,12 +16,15 @@
     "form",
     "Gatsby"
   ],
-  "author": "Robert Marshall (https://robertmarshall.dev)",
+  "author": "Rivers Agency <developers@riversagency.com> (https://riversagency.com)",
+  "contributors": [
+    "Robert Marshall (https://robertmarshall.dev)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robmarshall/gatsby-plugin-gravity-forms/issues"
+    "url": "https://github.com/Rivers-Agency/gatsby-plugin-gravity-forms/issues"
   },
-  "homepage": "https://github.com/robmarshall/gatsby-plugin-gravity-forms#readme",
+  "homepage": "https://github.com/Rivers-Agency/gatsby-plugin-gravity-forms#readme",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "apollo-upload-client": "^18.0.1",
